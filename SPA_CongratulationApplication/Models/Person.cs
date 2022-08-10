@@ -4,17 +4,17 @@ namespace SPA_CongratulationApplication.Models
 {
     public class Person
     {
-        private int id { get; set; }
+        public int id { get; set; }
 
         [StringLength(100)]
-        private string name { get; set; } = string.Empty;
+        public string name { get; set; } = string.Empty;
 
-        private DateOnly birthday { get; set; }
+        public DateTime birthday { get; set; }
 
-        private String? filename { get; set; }
+        public String? filename { get; set; }
 
-        private int userId { get; set; }
-        private User? user { get; set; }
+        public int userId { get; set; }
+        public User? user { get; set; }
 
     }
 }

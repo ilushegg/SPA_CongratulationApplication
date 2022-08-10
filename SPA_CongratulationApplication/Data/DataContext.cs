@@ -5,7 +5,7 @@ namespace SPA_CongratulationApplication.Data
 {
     public class DataContext : DbContext
     {
-        private DataContext(DbContextOptions<DataContext> options) : base(options) { }
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
     
         public DbSet<Person> People { get; set; }
 
